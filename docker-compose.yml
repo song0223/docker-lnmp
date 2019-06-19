@@ -1,6 +1,6 @@
 version: "3"
 services:
-	nginx:
+  nginx:
 		image: nginx:alpine #镜像
   port:
     - "80:80" #端口映射 本地：容器
@@ -24,6 +24,7 @@ services:
         PHP_VERSION: 7.2.13
         PHP_REDIS: 4.1.1
         REPLACE_SOURCE_LIST: true
+    ports:    
       - "9010:9000"
     privileged: true
     volumes:
