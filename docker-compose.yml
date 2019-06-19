@@ -40,9 +40,9 @@ services:
       - "3306:3306"
     privileged: true  
     volumes:
-      - ./conf/mysql/my.cnf:/etc/mysql/my.cnf:ro
+      - ./conf/mysql.cnf:/etc/mysql/my.cnf:ro
       - ./mysql/:/var/lib/mysql/:rw
-      - ./log/mysql/:/var/log/mysql/:rw
+      - ./log/:/var/log/mysql/:rw
     restart: always
     networks:
       - default
