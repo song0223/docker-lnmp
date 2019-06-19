@@ -2,7 +2,7 @@ version: "3"
 services:
   nginx:
     image: nginx:alpine #镜像
-    port:
+    ports:
       - "80:80" #端口映射 本地：容器
       - "433:433"
     privileged: true #使容器内的root账户拥有root权限（之前只是普通用户权限）
