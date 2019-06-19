@@ -18,15 +18,10 @@ services:
         - php72:fpm72
 
   php72:
-    build:
-      context: .
-      args:
-        PHP_VERSION: 7.2.13
-        PHP_REDIS: 4.1.1
-        REPLACE_SOURCE_LIST: true
+    build: ./php/php72
+    privileged: true
     ports:    
       - "9010:9000"
-    privileged: true
     volumes:
       - ./www:/var/www/html/:rw
       - ./conf/php.ini:/usr/local/etc/php/php.ini:ro
