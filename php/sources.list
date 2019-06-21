@@ -1,0 +1,31 @@
+####软件包源的配置文件在基础镜像所用的Linux系统中路径为 /etc/apt/sources.list，我们只需在执行 apt-get update命令之前，将我们编写好的使用网易包源的配置文件进行替换就行了。
+
+### 网易包源配置文件
+deb http://mirrors.163.com/debian/ jessie main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+
+###腾讯云内网包源配置文件
+deb http://mirrors.tencentyun.com/debian/ jessie main non-free contrib
+deb http://mirrors.tencentyun.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.tencentyun.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.tencentyun.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.tencentyun.com/debian-security/ jessie/updates main non-free contrib
+
+###阿里云包源配置文件
+deb https://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb https://mirrors.aliyun.com/debian/ jessie-updates main non-free contrib
+deb https://mirrors.aliyun.com/debian/ jessie-backports main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ jessie main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ jessie-updates main non-free contrib
+deb-src https://mirrors.aliyun.com/debian/ jessie-backports main non-free contrib
+deb https://mirrors.aliyun.com/debian-security/ jessie/updates main non-free contrib
+deb-src https://mirrors.aliyun.com/debian-security/ jessie/updates main non-free contrib
