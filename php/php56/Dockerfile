@@ -1,7 +1,5 @@
 FROM php:5.6-fpm
 
-COPY ./sources.list.jessie /etc/apt/sources.list
-
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
